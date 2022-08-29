@@ -3,6 +3,9 @@
 # border & title
 for_window [class="^.*"] border pixel 1, title_format "<b> %class >> %title </b>"
 
+# change color of highlight
+client.focused          #4c7899 #285577 #ffffff #2e9ef4 #EE4B2B
+
 # gaps
 gaps inner 8
 gaps outer 0
@@ -54,7 +57,7 @@ bindsym $Mod+Shift+q kill
 # core
 bindsym $Mod+F1             exec --no-startup-id al-browser
 # bindsym $Mod+F2             exec --no-startup-id al-filemanager
-bindsym $Mod+F2             exec --no-startup-id termite -e ranger
+bindsym $Mod+F2             exec --no-startup-id alacritty -e ranger
 # bindsym $Mod+t             exec --no-startup-id al-terminal
 bindsym $Mod+Return        exec --no-startup-id al-terminal
 # bindsym Mod1+Shift+Return  exec --no-startup-id al-terminal
@@ -198,6 +201,9 @@ default_orientation horizontal
 
 # new_window normal
 # new_float  normal
+
+default_border normal
+default_floating_border normal
 
 # hide_edge_borders both
 
