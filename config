@@ -40,8 +40,11 @@ exec --no-startup-id xfsettingsd
 # start bluetooth applet
 exec --no-startup-id blueman-applet
 
+# start conky
 exec --no-startup-id conky
 
+# start redshift
+exec --no-startup-id redshift -l 11.23333:122.91667
 #############         Bindings           ##################
 
 # launchers
